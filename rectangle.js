@@ -9,10 +9,9 @@ module.exports = (x,y,callback) =>{
 	else
 	{
 		setTimeout(() =>
-			callback(null,
-			{
-				perimeter: (x,y) =>(2*(x+y)),
-				area: (x,y) => (x*y)
+			callback(null,{
+				perimeter:() =>(2*(x+y)),
+				area:() => (x*y)
 
 			}),
 			2000);
